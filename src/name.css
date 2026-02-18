@@ -1,0 +1,45 @@
+/* Full page background */
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("https://m.media-amazon.com/images/I/511N9mIB8lL._UF1000,1000_QL80_.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container covers full screen */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 🔑 pushes button to bottom */
+  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Heading at top */
+.heading {
+  color: #f8067f; /* Radha pink */
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3.3rem;
+}
+
+/* Button at bottom */
+.btn {
+  margin-bottom: 1rem;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    width: 90%;
+  }
+}
